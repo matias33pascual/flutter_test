@@ -1,11 +1,8 @@
-# flutter_testing
-
+# Flutter_testing
 A Flutter project to learn Flutter testing
 
-# simple_counter
+## Simple_counter
+Demostrates the basic functionality of a unit test
 
-muestra la funcionalidad basica de un test unitario
-
-# value
-
-muestra la funcionalidad de un test unitario utilizando un repositorio y un servicio mockeado con Mocktail
+## Value
+Demonstrates the functionality of a unit test using a repository and a service mocked with Mocktail
