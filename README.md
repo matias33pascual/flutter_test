@@ -1,8 +1,8 @@
-# flutter_testing
-
+# Flutter_testing
 A Flutter project to learn Flutter testing
 
-# simple_counter
+## Simple_counter
+Demostrates the basic functionality of a unit test
 
 Muestra la funcionalidad basica de un test unitario
 
