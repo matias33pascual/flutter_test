@@ -10,7 +10,7 @@ class MockValueService extends Mock implements ValueService {}
 
 void main() {
   group(
-    'Probando conexion de Value Repository con Value Service: ',
+    'Probando conexion de Value Repository con Value Service : ',
     () {
       late ValueRepository repository;
       setUp(() => repository = ValueRepository(service: ValueService.instance));
@@ -25,7 +25,7 @@ void main() {
   );
 
   group(
-    'Probando Value Repository usando Mocktail:',
+    'Probando Value Repository usando Mocktail :',
     () {
       late MockValueService mockService;
       late ValueRepository repository;

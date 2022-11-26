@@ -4,7 +4,7 @@ import 'package:test/scaffolding.dart';
 
 void main() {
   group(
-    'Probando funcionalidad del contador:',
+    'Probando funcionalidad del contador :',
     () {
       late SimpleCounter counter;
       setUp(() => counter = SimpleCounter());
