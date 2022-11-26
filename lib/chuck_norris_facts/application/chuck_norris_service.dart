@@ -1,7 +1,7 @@
 import 'package:http/http.dart' as http;
 
 class ChuckNorrisService {
-  final String baseUrl = 'api.chucknorris.io';
+  final String _baseUrl = 'api.chucknorris.io';
 
   ChuckNorrisService._();
 
@@ -11,7 +11,7 @@ class ChuckNorrisService {
   Future<http.Response> getCategories() async {
     const String categoriesUrl = '/jokes/categories';
 
-    final url = Uri.https(baseUrl, categoriesUrl);
+    final url = Uri.https(_baseUrl, categoriesUrl);
 
     try {
       final response = await http.get(url);
@@ -22,7 +22,7 @@ class ChuckNorrisService {
 
         default:
           throw Exception(
-              'Error in Chuck Norris Service, getCategories(): ${response.body}');
+              'Error in Chuck Norris Service. getCategories: ${response.statusCode}: ${response.body}');
       }
     } catch (error) {
       rethrow;

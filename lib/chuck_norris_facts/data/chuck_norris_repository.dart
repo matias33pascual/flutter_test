@@ -11,7 +11,6 @@ class ChuckNorrisRepository {
       final response = await service.getCategories();
       return parseStringArrayToListString(response.body);
     } catch (error) {
-      print(error);
       return [];
     }
   }

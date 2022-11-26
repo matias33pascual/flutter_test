@@ -13,7 +13,7 @@ class TestingApp extends StatelessWidget {
       title: 'Testing App',
       home: Scaffold(
         body: Center(
-          child: Text('Home'),
+          child: Text('Learning Flutter testing'),
         ),
       ),
     );

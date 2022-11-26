@@ -1,4 +1,3 @@
-//* Value Service: clase Singleton que simula un servicio online que devuelve un valor de internet
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 

@@ -1,5 +1,3 @@
-//* Value repository: se conecta a ValueService para obtener el valor del servicio
-
 import 'package:flutter_testing/value/application/value_service.dart';
 import 'package:flutter_testing/value/domain/value.dart';
 import 'package:http/http.dart';

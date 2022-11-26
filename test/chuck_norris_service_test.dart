@@ -10,6 +10,18 @@ void main() {
       setUp(() => service = ChuckNorrisService.instance);
 
       test(
+        'Deberia devolver un List<String> con elementos',
+        () async {
+          final response = await service.getCategories();
+
+          final List<String> categories =
+              parseStringArrayToListString(response.body);
+
+          expect(categories.isNotEmpty, true);
+        },
+      );
+
+      test(
         'Deberia devolver true al buscar la categoria sport',
         () async {
           final response = await service.getCategories();
