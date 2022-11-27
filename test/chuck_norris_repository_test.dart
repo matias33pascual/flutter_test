@@ -7,7 +7,7 @@ class MockChuckNorrisService extends Mock implements ChuckNorrisService {}
 
 void main() {
   group(
-    'Probando conexion con el servicio :',
+    'Probando Chuck Norris Repository :',
     () {
       late ChuckNorrisRepository repository;
 
@@ -19,7 +19,7 @@ void main() {
         () async {
           final categories = await repository.getCategories();
 
-          expect(categories.isNotEmpty, true);
+          expect(categories.isNotEmpty, isTrue);
         },
       );
       test(
@@ -27,17 +27,39 @@ void main() {
         () async {
           final categories = await repository.getCategories();
 
-          expect(categories.any((element) => element.contains('food')), true);
+          expect(categories.any((element) => element.contains('food')), isTrue);
+        },
+      );
+
+      test(
+        'Deberia traer un hecho de Chuck Norris',
+        () async {
+          final joke = await repository.getJoke();
+
+          expect(joke, isNotNull);
+          expect(joke.value.runtimeType, String);
+        },
+      );
+
+      test(
+        'Deberia traer un hecho de Chuck Norris de una categoria',
+        () async {
+          final categories = await repository.getCategories();
+
+          final joke = await repository.getJokeFromCategory(categories[0]);
+
+          expect(joke, isNotNull);
+          expect(joke.value.runtimeType, String);
         },
       );
     },
   );
 
   group(
-    'Simulando error en el servicio :',
+    'Simulando error en el servicio Chuck Norris Service:',
     () {
       test(
-        "Deberia devolver un array vacio",
+        "Deberia devolver un array vacio al traer las categorias",
         () async {
           final mockService = MockChuckNorrisService();
           final repository = ChuckNorrisRepository(service: mockService);
@@ -47,7 +69,7 @@ void main() {
 
           final categories = await repository.getCategories();
 
-          expect(categories.isEmpty, true);
+          expect(categories.isEmpty, isTrue);
         },
       );
     },

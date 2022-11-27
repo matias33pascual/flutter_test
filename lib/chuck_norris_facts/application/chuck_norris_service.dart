@@ -9,9 +9,9 @@ class ChuckNorrisService {
   static ChuckNorrisService get instance => _instance;
 
   Future<http.Response> getCategories() async {
-    const String categoriesUrl = '/jokes/categories';
+    const String endpoint = '/jokes/categories';
 
-    final url = Uri.https(_baseUrl, categoriesUrl);
+    final url = Uri.https(_baseUrl, endpoint);
 
     try {
       final response = await http.get(url);
@@ -23,6 +23,48 @@ class ChuckNorrisService {
         default:
           throw Exception(
               'Error in Chuck Norris Service. getCategories: ${response.statusCode}: ${response.body}');
+      }
+    } catch (error) {
+      rethrow;
+    }
+  }
+
+  Future<http.Response> getRandomFromCategory(String category) async {
+    const String endpoint = '/jokes/random';
+
+    final url = Uri.https(_baseUrl, endpoint, {'category': category});
+
+    try {
+      final response = await http.get(url);
+
+      switch (response.statusCode) {
+        case 200:
+          return response;
+
+        default:
+          throw Exception(
+              'Error in Chuck Norris Service. getRandomFromCategory: ${response.statusCode}: ${response.body}');
+      }
+    } catch (error) {
+      rethrow;
+    }
+  }
+
+  Future<http.Response> getRandomJoke() async {
+    const String endpoint = '/jokes/random';
+
+    final url = Uri.https(_baseUrl, endpoint);
+
+    try {
+      final response = await http.get(url);
+
+      switch (response.statusCode) {
+        case 200:
+          return response;
+
+        default:
+          throw Exception(
+              'Error in Chuck Norris Service. getRandomJoke: ${response.statusCode}: ${response.body}');
       }
     } catch (error) {
       rethrow;
