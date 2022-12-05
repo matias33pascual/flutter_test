@@ -1,6 +1,6 @@
 # Flutter_testing
 
-A Flutter project to learn Flutter testing.
+A Flutter project to learn how to test in Flutter.
 
 Use `flutter test` in terminal to run all the test.
 
