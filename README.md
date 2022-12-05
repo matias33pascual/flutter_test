@@ -2,7 +2,6 @@
 
 A Flutter project to learn Flutter testing.
 
-**Testing all the test**
 Use `flutter test` in terminal to run all the test.
 
 ## Features
