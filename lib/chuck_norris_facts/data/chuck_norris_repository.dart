@@ -1,7 +1,7 @@
 import 'package:flutter_testing/chuck_norris_facts/application/chuck_norris_service.dart';
-import 'package:flutter_testing/utils/utils.dart';
 
 import '../domain/joke.dart';
+import '../utils/utils.dart';
 
 class ChuckNorrisRepository {
   ChuckNorrisService service;

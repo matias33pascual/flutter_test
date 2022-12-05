@@ -1,5 +1,5 @@
 import 'package:flutter_testing/chuck_norris_facts/application/chuck_norris_service.dart';
-import 'package:flutter_testing/utils/utils.dart';
+import 'package:flutter_testing/chuck_norris_facts/utils/utils.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -17,7 +17,7 @@ void main() {
           final List<String> categories =
               parseStringArrayToListString(response.body);
 
-          expect(categories.isNotEmpty, true);
+          expect(categories.isNotEmpty, isTrue);
         },
       );
 
@@ -29,7 +29,8 @@ void main() {
           final List<String> categories =
               parseStringArrayToListString(response.body);
 
-          expect(categories.any((element) => element.contains('sport')), true);
+          expect(
+              categories.any((element) => element.contains('sport')), isTrue);
         },
       );
     },

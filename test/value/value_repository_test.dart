@@ -62,7 +62,7 @@ void main() {
           );
 
           expect(() async => await repository.getValueFromService(),
-              throwsException);
+              throwsA(isA<Exception>()));
         },
       );
 
@@ -89,7 +89,7 @@ void main() {
           );
 
           expect(() async => await repository.getCodeValue(code: '321'),
-              throwsException);
+              throwsA(isA<Exception>()));
         },
       );
     },

@@ -1,17 +1,34 @@
 # Flutter_testing
 
-A Flutter project to learn Flutter testing
+A Flutter Project To Learn Flutter Testing.
 
-## Simple_counter
+**Testing all the test**
+Use `flutter test` in terminal to run all the test.
 
-Demostrates the basic functionality of a unit test
+## Features
 
-Muestra la funcionalidad basica de un test unitario
+### Simple_counter
 
-# value
+Demostrates the basic functionality of a unit test.
 
-Muestra la funcionalidad de un test unitario utilizando un repositorio y un servicio mockeado con Mocktail
+### Value
 
-# Chuck Norris Facts
+Demonstrates the functionality of a unit test using a repository and a service mocked with Mocktail.
 
-Prueba la API del servicio de https://api.chucknorris.io/
+### Chuck Norris Facts
+
+Demonstrates the functionality of a unit test using a repository, the service from the API https://api.chucknorris.io/ and Mocktail.
+
+## References
+
+Wikipedia: [Behavior-driven_development](https://en.wikipedia.org/wiki/Behavior-driven_development)
+
+Flutter documentation: [Testing Flutter apps](https://docs.flutter.dev/testing)
+Flutter documentation: [An introduction to unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction)
+
+Package: [Mocktail](https://pub.dev/documentation/mocktail/latest/)
+Package: [Test](https://pub.dev/packages/test "Test")
+
+Codelabs: [How to test a Flutter app](https://codelabs.developers.google.com/codelabs/flutter-app-testing#0)
+
+Example: [How to write unit test in Flutter](https://www.wednesday.is/writing-tutorials/tests-in-flutter-part-1-how-to-write-unit-tests-in-flutter)

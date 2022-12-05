@@ -1,4 +1,4 @@
-import 'package:flutter_testing/utils/utils.dart';
+import 'package:flutter_testing/chuck_norris_facts/utils/utils.dart';
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
 
@@ -10,8 +10,9 @@ void main() {
         'Deberia encontrar "Playa" en una lista de string',
         () {
           expect(
-            parseStringArrayToListString("[Mar,Arena,Playa]").contains("Playa"),
-            true,
+            parseStringArrayToListString('["Mar","Arena","Playa"]')
+                .contains("Playa"),
+            isTrue,
           );
         },
       );
