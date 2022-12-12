@@ -1,4 +1,4 @@
-# Flutter_testing
+# Flutter Test
 
 A Flutter project to learn how to test in Flutter.
 
