@@ -20,16 +20,10 @@ Demonstrates the functionality of a unit test using a repository, the service fr
 
 ## References
 
-Wikipedia: [Behavior-driven_development](https://en.wikipedia.org/wiki/Behavior-driven_development)
-
-Flutter documentation: [Testing Flutter apps](https://docs.flutter.dev/testing)
-
-Flutter documentation: [An introduction to unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction)
-
-Package: [Mocktail](https://pub.dev/documentation/mocktail/latest/)
-
-Package: [Test](https://pub.dev/packages/test "Test")
-
-Codelabs: [How to test a Flutter app](https://codelabs.developers.google.com/codelabs/flutter-app-testing#0)
-
-Example: [How to write unit test in Flutter](https://www.wednesday.is/writing-tutorials/tests-in-flutter-part-1-how-to-write-unit-tests-in-flutter)
+-   Wikipedia: [Behavior-driven_development](https://en.wikipedia.org/wiki/Behavior-driven_development)
+-   Flutter documentation: [Testing Flutter apps](https://docs.flutter.dev/testing)
+-   Flutter documentation: [An introduction to unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction)
+-   Package: [Test](https://pub.dev/packages/test "Test")
+-   Package: [Mocktail](https://pub.dev/documentation/mocktail/latest/)
+-   Codelabs: [How to test a Flutter app](https://codelabs.developers.google.com/codelabs/flutter-app-testing#0)
+-   Example: [How to write unit test in Flutter](https://www.wednesday.is/writing-tutorials/tests-in-flutter-part-1-how-to-write-unit-tests-in-flutter)
