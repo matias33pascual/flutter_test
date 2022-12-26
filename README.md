@@ -23,6 +23,7 @@ Demonstrates the functionality of a unit test using a repository, the service fr
 -   Wikipedia: [Behavior-driven_development](https://en.wikipedia.org/wiki/Behavior-driven_development)
 -   Flutter documentation: [Testing Flutter apps](https://docs.flutter.dev/testing)
 -   Flutter documentation: [An introduction to unit testing](https://docs.flutter.dev/cookbook/testing/unit/introduction)
+-   Flutter documentation: [flutter_test library](https://api.flutter.dev/flutter/flutter_test/flutter_test-library.html)
 -   Package: [Test](https://pub.dev/packages/test "Test")
 -   Package: [Mocktail](https://pub.dev/documentation/mocktail/latest/)
 -   Codelabs: [How to test a Flutter app](https://codelabs.developers.google.com/codelabs/flutter-app-testing#0)
